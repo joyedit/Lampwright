@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AllowMissingPrunePackageData>true</AllowMissingPrunePackageData>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputType>Library</OutputType>
+    <AssemblyTitle>Lampwright</AssemblyTitle>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <VINTAGE_STORY_PATH>/home/deftones/Apps/vintagestory</VINTAGE_STORY_PATH>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- The light itself only needs the API: EntityPlayer, the character inventory and
+         watched attributes all live there, and nothing is Harmony patched. -->
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(VINTAGE_STORY_PATH)/VintagestoryAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- CollectibleBehaviorWearable, which LampbeltWearable subclasses, ships in the
+         survival mod rather than the API. Compile-time only; the game loads its own. -->
+    <Reference Include="VSSurvivalMod">
+      <HintPath>$(VINTAGE_STORY_PATH)/Mods/VSSurvivalMod.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VintagestoryLib">
+      <HintPath>$(VINTAGE_STORY_PATH)/VintagestoryLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

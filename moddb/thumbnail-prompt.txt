@@ -1,0 +1,27 @@
+Create a square 1:1 thumbnail image for a Vintage Story mod called Lampwright.
+
+Art style: match Vintage Story itself - chunky low-poly voxel geometry built from
+visible blocky forms, hand-painted low-resolution pixel textures, a muted earthy
+palette, soft painterly lighting. Not photorealistic, not glossy 3D render, not
+cartoon vector art.
+
+Subject: a worn brown leather belt with a tarnished brass buckle, lying in a loose
+open curve so its shape reads instantly as a belt. Four small brass gears are set
+flush into the leather band at even intervals, each one lit from within with a pale
+cyan glow. A small brass lantern hangs from the belt at one side: a squat box with an
+overhanging brass cap and base, a short bail at the top, and glowing cyan glass panes
+on each face. The leather is scuffed and the brass is dulled - this is a working
+tinker's belt, not a treasure.
+
+Lighting: the lantern is the only light source in the picture. Cool cyan light pools
+outward from it across the leather, picks out the rims of the brass gears, and throws
+a soft falloff into deep near-black beyond. Warm brass highlights sit against the cold
+glow. Strong contrast between the lit pool and the dark.
+
+Composition: belt and lantern centred, filling most of the frame, one clear silhouette
+with no clutter. Plain dark neutral background, no scenery, no floor detail, no props.
+Slight vignette. The image must still read clearly when shrunk to 128 pixels wide, so
+keep shapes large and the subject count low.
+
+Do not include: text, letters, numbers, logos, watermarks, borders, hands, people,
+creatures, UI elements, or any photorealistic rendering.

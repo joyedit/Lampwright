@@ -1,0 +1,15 @@
+[
+	{
+		// gear-temporal has maxstacksize 1, so the four gears have to sit in four
+		// separate cells - a quantity: 4 ingredient would never be satisfiable.
+		"ingredientPattern": "GTG,TBT,GTG",
+		"ingredients": {
+			"G": { "type": "item", "code": "game:gear-temporal" },
+			"T": { "type": "item", "code": "game:flaxtwine" },
+			"B": { "type": "item", "code": "game:clothes-waist-*" }
+		},
+		"width": 3,
+		"height": 3,
+		"output": { "type": "item", "code": "lampwright:lampbelt-temporal" }
+	}
+]

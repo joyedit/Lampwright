@@ -1,0 +1,1143 @@
+{
+	"editor": {
+		"backDropShape": "entity/humanoid/seraph",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"lampbelt": [
+			16,
+			16
+		]
+	},
+	"textures": {
+		"lampbelt": "lampwright:entity/lampbelt-temporal"
+	},
+	"elements": [
+		{
+			"name": "Waist",
+			"stepParentName": "LowerTorso",
+			"from": [
+				-0.2,
+				0.0,
+				-0.4
+			],
+			"to": [
+				5.2,
+				1.0,
+				6.4
+			],
+			"rotationOrigin": [
+				2.8,
+				0.0,
+				3.0
+			],
+			"faces": {
+				"north": {
+					"texture": "#lampbelt",
+					"uv": [
+						0.0,
+						0.0,
+						5.0,
+						1.0
+					]
+				},
+				"east": {
+					"texture": "#lampbelt",
+					"uv": [
+						1.5,
+						0.5,
+						8.0,
+						1.5
+					]
+				},
+				"south": {
+					"texture": "#lampbelt",
+					"uv": [
+						0.0,
+						0.0,
+						5.0,
+						1.0
+					]
+				},
+				"west": {
+					"texture": "#lampbelt",
+					"uv": [
+						1.0,
+						0.5,
+						7.5,
+						1.5
+					]
+				},
+				"up": {
+					"texture": "#lampbelt",
+					"uv": [
+						0.0,
+						1.5,
+						5.0,
+						8.0
+					]
+				},
+				"down": {
+					"texture": "#lampbelt",
+					"uv": [
+						0.0,
+						1.5,
+						5.0,
+						8.0
+					]
+				}
+			},
+			"children": [
+				{
+					"name": "buckle-down",
+					"from": [
+						-0.3,
+						-0.5,
+						3.0
+					],
+					"to": [
+						0.2,
+						0.0,
+						4.5
+					],
+					"rotationOrigin": [
+						-0.3,
+						-0.5,
+						3.0
+					],
+					"faces": {
+						"north": {
+							"texture": "#lampbelt",
+							"uv": [
+								0.0,
+								0.0,
+								0.5,
+								0.5
+							],
+							"enabled": false
+						},
+						"east": {
+							"texture": "#lampbelt",
+							"uv": [
+								6.0,
+								2.5,
+								7.5,
+								3.0
+							],
+							"enabled": false
+						},
+						"south": {
+							"texture": "#lampbelt",
+							"uv": [
+								7.0,
+								2.0,
+								7.5,
+								2.5
+							]
+						},
+						"west": {
+							"texture": "#lampbelt",
+							"uv": [
+								6.0,
+								2.5,
+								7.5,
+								3.0
+							]
+						},
+						"up": {
+							"texture": "#lampbelt",
+							"uv": [
+								7.0,
+								1.5,
+								7.5,
+								3.0
+							]
+						},
+						"down": {
+							"texture": "#lampbelt",
+							"uv": [
+								7.0,
+								1.5,
+								7.5,
+								3.0
+							]
+						}
+					},
+					"children": [
+						{
+							"name": "buckle-left",
+							"from": [
+								0.0,
+								0.0,
+								-0.5
+							],
+							"to": [
+								0.5,
+								1.5,
+								0.0
+							],
+							"rotationOrigin": [
+								0.0,
+								0.0,
+								-0.5
+							],
+							"faces": {
+								"north": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										1.5,
+										7.0,
+										3.0
+									]
+								},
+								"east": {
+									"texture": "#lampbelt",
+									"uv": [
+										0.0,
+										0.0,
+										0.5,
+										1.5
+									],
+									"enabled": false
+								},
+								"south": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										2.0,
+										7.0,
+										3.5
+									]
+								},
+								"west": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										2.0,
+										7.0,
+										3.5
+									]
+								},
+								"up": {
+									"texture": "#lampbelt",
+									"uv": [
+										0.0,
+										0.0,
+										0.5,
+										0.5
+									],
+									"enabled": false
+								},
+								"down": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										2.0,
+										7.0,
+										2.5
+									]
+								}
+							}
+						},
+						{
+							"name": "buckle-right",
+							"from": [
+								0.0,
+								0.5,
+								1.0
+							],
+							"to": [
+								0.5,
+								2.0,
+								1.5
+							],
+							"rotationOrigin": [
+								0.0,
+								0.5,
+								1.0
+							],
+							"faces": {
+								"north": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										1.5,
+										7.0,
+										3.0
+									]
+								},
+								"east": {
+									"texture": "#lampbelt",
+									"uv": [
+										0.0,
+										0.0,
+										0.5,
+										1.5
+									],
+									"enabled": false
+								},
+								"south": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										1.5,
+										7.0,
+										3.0
+									]
+								},
+								"west": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										1.5,
+										7.0,
+										3.0
+									]
+								},
+								"up": {
+									"texture": "#lampbelt",
+									"uv": [
+										7.5,
+										3.0,
+										8.0,
+										3.5
+									]
+								},
+								"down": {
+									"texture": "#lampbelt",
+									"uv": [
+										0.0,
+										0.0,
+										0.5,
+										0.5
+									],
+									"enabled": false
+								}
+							}
+						},
+						{
+							"name": "buckle-up",
+							"from": [
+								0.0,
+								1.5,
+								-0.5
+							],
+							"to": [
+								0.5,
+								2.0,
+								1.0
+							],
+							"rotationOrigin": [
+								0.0,
+								1.5,
+								0.0
+							],
+							"faces": {
+								"north": {
+									"texture": "#lampbelt",
+									"uv": [
+										7.5,
+										2.0,
+										8.0,
+										2.5
+									]
+								},
+								"east": {
+									"texture": "#lampbelt",
+									"uv": [
+										3.0,
+										0.5,
+										4.5,
+										1.0
+									],
+									"enabled": false
+								},
+								"south": {
+									"texture": "#lampbelt",
+									"uv": [
+										0.0,
+										0.0,
+										0.5,
+										0.5
+									],
+									"enabled": false
+								},
+								"west": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.0,
+										2.5,
+										7.5,
+										3.0
+									]
+								},
+								"up": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										2.0,
+										7.0,
+										3.5
+									]
+								},
+								"down": {
+									"texture": "#lampbelt",
+									"uv": [
+										7.5,
+										1.5,
+										8.0,
+										3.0
+									]
+								}
+							}
+						},
+						{
+							"name": "belt-pin",
+							"from": [
+								0.2,
+								0.8,
+								0.5
+							],
+							"to": [
+								0.7,
+								1.2,
+								2.0
+							],
+							"rotationOrigin": [
+								0.2,
+								0.8,
+								0.7
+							],
+							"faces": {
+								"north": {
+									"texture": "#lampbelt",
+									"uv": [
+										7.0,
+										2.5,
+										7.5,
+										3.0
+									]
+								},
+								"east": {
+									"texture": "#lampbelt",
+									"uv": [
+										0.0,
+										0.0,
+										1.5,
+										0.5
+									],
+									"enabled": false
+								},
+								"south": {
+									"texture": "#lampbelt",
+									"uv": [
+										7.0,
+										1.5,
+										7.5,
+										2.0
+									]
+								},
+								"west": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										3.0,
+										8.0,
+										3.5
+									]
+								},
+								"up": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										2.0,
+										7.0,
+										3.5
+									]
+								},
+								"down": {
+									"texture": "#lampbelt",
+									"uv": [
+										6.5,
+										1.5,
+										7.0,
+										3.0
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "belt-loop",
+					"from": [
+						-0.2,
+						-0.2,
+						1.5
+					],
+					"to": [
+						0.3,
+						1.2,
+						2.0
+					],
+					"rotationOrigin": [
+						-0.2,
+						-0.2,
+						1.5
+					],
+					"faces": {
+						"north": {
+							"texture": "#lampbelt",
+							"uv": [
+								6.0,
+								2.5,
+								6.5,
+								3.5
+							]
+						},
+						"east": {
+							"texture": "#lampbelt",
+							"uv": [
+								0.0,
+								0.0,
+								0.5,
+								1.0
+							],
+							"enabled": false
+						},
+						"south": {
+							"texture": "#lampbelt",
+							"uv": [
+								6.0,
+								2.5,
+								6.5,
+								3.5
+							]
+						},
+						"west": {
+							"texture": "#lampbelt",
+							"uv": [
+								6.5,
+								2.0,
+								7.0,
+								3.0
+							]
+						},
+						"up": {
+							"texture": "#lampbelt",
+							"uv": [
+								7.0,
+								3.0,
+								7.5,
+								3.5
+							]
+						},
+						"down": {
+							"texture": "#lampbelt",
+							"uv": [
+								6.5,
+								2.5,
+								7.0,
+								3.0
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "gear-north",
+			"stepParentName": "LowerTorso",
+			"from": [
+				2.05,
+				0.05,
+				-0.6
+			],
+			"to": [
+				2.95,
+				0.95,
+				-0.4
+			],
+			"faces": {
+				"north": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"east": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"south": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"west": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"up": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"down": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				}
+			}
+		},
+		{
+			"name": "gear-south",
+			"stepParentName": "LowerTorso",
+			"from": [
+				2.05,
+				0.05,
+				6.4
+			],
+			"to": [
+				2.95,
+				0.95,
+				6.6
+			],
+			"faces": {
+				"north": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"east": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"south": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"west": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"up": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"down": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				}
+			}
+		},
+		{
+			"name": "gear-west",
+			"stepParentName": "LowerTorso",
+			"from": [
+				-0.4,
+				0.05,
+				3.05
+			],
+			"to": [
+				-0.2,
+				0.95,
+				3.95
+			],
+			"faces": {
+				"north": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"east": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"south": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"west": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"up": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"down": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				}
+			}
+		},
+		{
+			"name": "gear-east",
+			"stepParentName": "LowerTorso",
+			"from": [
+				5.2,
+				0.05,
+				2.55
+			],
+			"to": [
+				5.4,
+				0.95,
+				3.45
+			],
+			"faces": {
+				"north": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"east": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"south": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"west": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"up": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				},
+				"down": {
+					"texture": "#lampbelt",
+					"uv": [
+						8,
+						8,
+						16,
+						16
+					],
+					"glow": 255
+				}
+			}
+		},
+		{
+			"name": "lamp-bail",
+			"stepParentName": "LowerTorso",
+			"from": [
+				4.9,
+				-0.5,
+				2.8
+			],
+			"to": [
+				5.35,
+				0.0,
+				3.2
+			],
+			"faces": {
+				"north": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"east": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"south": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"west": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"up": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"down": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				}
+			}
+		},
+		{
+			"name": "lamp-cap",
+			"stepParentName": "LowerTorso",
+			"from": [
+				4.65,
+				-0.85,
+				2.45
+			],
+			"to": [
+				5.85,
+				-0.5,
+				3.65
+			],
+			"faces": {
+				"north": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"east": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"south": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"west": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"up": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"down": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				}
+			}
+		},
+		{
+			"name": "lamp-glass",
+			"stepParentName": "LowerTorso",
+			"from": [
+				4.75,
+				-2.35,
+				2.55
+			],
+			"to": [
+				5.75,
+				-0.85,
+				3.55
+			],
+			"faces": {
+				"north": {
+					"texture": "#lampbelt",
+					"uv": [
+						1,
+						9,
+						7,
+						15
+					],
+					"glow": 255
+				},
+				"east": {
+					"texture": "#lampbelt",
+					"uv": [
+						1,
+						9,
+						7,
+						15
+					],
+					"glow": 255
+				},
+				"south": {
+					"texture": "#lampbelt",
+					"uv": [
+						1,
+						9,
+						7,
+						15
+					],
+					"glow": 255
+				},
+				"west": {
+					"texture": "#lampbelt",
+					"uv": [
+						1,
+						9,
+						7,
+						15
+					],
+					"glow": 255
+				},
+				"up": {
+					"texture": "#lampbelt",
+					"uv": [
+						1,
+						9,
+						7,
+						15
+					],
+					"glow": 255
+				},
+				"down": {
+					"texture": "#lampbelt",
+					"uv": [
+						1,
+						9,
+						7,
+						15
+					],
+					"glow": 255
+				}
+			}
+		},
+		{
+			"name": "lamp-base",
+			"stepParentName": "LowerTorso",
+			"from": [
+				4.65,
+				-2.75,
+				2.45
+			],
+			"to": [
+				5.85,
+				-2.35,
+				3.65
+			],
+			"faces": {
+				"north": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"east": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"south": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"west": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"up": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				},
+				"down": {
+					"texture": "#lampbelt",
+					"uv": [
+						10,
+						2,
+						14,
+						6
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,88 @@
+{
+	"code": "lampbelt",
+
+	// temporal is the one the grid recipe produces; the rest are reached by dyeing it
+	// in a barrel, the same way vanilla dyes cloth and daub.
+	"variantgroups": [
+		{ "code": "color", "states": ["temporal", "orange", "red", "yellow", "blue", "white"] }
+	],
+
+	"maxstacksize": 1,
+
+	// 128 is the Outfit storage flag - without it the belt cannot enter a clothing slot.
+	"storageFlags": 128,
+	// LampbeltWearable is the stock Wearable behaviour with one change: a belt that has
+	// no condition attribute yet starts at full condition rather than vanilla's random
+	// 0-40% roll. A barrel recipe writes its output straight into the slot without
+	// going through OnCreatedByCrafting, so without this a belt that went into the dye
+	// barrel at 100% would come out randomly worn. See src/LampbeltWearable.cs.
+	"behaviors": [
+		{ "name": "LampbeltWearable" }
+	],
+	"attributes": {
+		"wearableAttachment": true,
+		"clothescategory": "waist",
+		"warmth": 0.25
+	},
+
+	"shape": { "base": "lampbelt" },
+	// Every texture code the shape uses has to resolve here. The inventory icon is
+	// tesselated through the ITEM atlas (CollectibleBehaviorWearableAttachment
+	// .OnBeforeRender -> Tesselator.GetTextureSource(item)), and a code that does not
+	// resolve there comes back pointing into a different atlas - it draws as a slab of
+	// unrelated blocks, not as a missing texture. That is what wrecked the first icon:
+	// the shape named game:...messenger-belt, game:block/metal/plate/brass and
+	// game:block/transparent, and all three came out as garbage. Everything is one png
+	// in our own domain now, including the transparent one that hides the seraph body.
+	"textures": {
+		"lampbelt": { "base": "lampwright:entity/lampbelt-{color}" },
+		"seraph": { "base": "lampwright:entity/invisible" }
+	},
+	"renderAlphaTest": 0.25,
+
+	// [hue 0-63, saturation 0-7, brightness 0-31]. The client expands these as
+	// hue*4 and sat*32 onto a 0-255 wheel (ClientSystemStartup), so e.g. hue 4 sat 4
+	// is exactly a vanilla lit torch and hue 0 sat 0 is pure white.
+	// These are only read directly while the belt is HELD; LampwrightModSystem reads
+	// the same values back off the collectible to light the wearer.
+	"lightHsvByType": {
+		"*-temporal": [32, 5, 17],
+		"*-orange":   [4, 4, 17],
+		"*-red":      [0, 6, 17],
+		"*-yellow":   [9, 4, 17],
+		"*-blue":     [40, 4, 17],
+		"*-white":    [0, 0, 17]
+	},
+
+	"creativeinventory": { "general": ["*"], "items": ["*"], "clothing": ["*"] },
+
+	// Not vanilla's waist transform. A wearable's icon is not this shape on its own:
+	// CollectibleBehaviorWearableAttachment.OnBeforeRender replaces the mesh with the
+	// whole seraph, this shape step-parented onto its LowerTorso bone and the body
+	// made invisible by the "seraph" texture above. Hence an origin up at the hips
+	// rather than at zero. Vanilla's numbers frame a flat band, and when they are used
+	// on a belt that has something hanging off it the 174-degree X rotation puts the
+	// lamp behind the band, nearly edge on, in a view looking up from underneath.
+	//
+	// These were picked with tools/icon.py, which renders the slot exactly - same
+	// mesh, same matrix, same scissor - so a change can be judged without the game:
+	// the band is seen from slightly above, turned so the lamp hangs clear of it at
+	// the front, and the whole thing stays inside the slot's +-0.9375.
+	"guiTransform": {
+		"translation": { "x": 0, "y": 0, "z": 19 },
+		"rotation": { "x": -25, "y": 20, "z": 180 },
+		"origin": { "x": 0.5454, "y": 0.8834, "z": 0.5 },
+		"scale": 3.55
+	},
+	"tpHandTransform": {
+		"translation": { "x": -0.78, "y": -0.93, "z": -1.23 },
+		"rotation": { "x": 35, "y": -90, "z": 49 },
+		"scale": 0.67
+	},
+	"groundTransform": {
+		"translation": { "x": 0.05, "y": -0.21, "z": 0 },
+		"rotation": { "x": 0, "y": 0, "z": 0 },
+		"origin": { "x": 0.5, "y": 0.5, "z": 0.5299 },
+		"scale": 2.72
+	}
+}

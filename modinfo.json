@@ -1,0 +1,15 @@
+{
+  "type": "code",
+  "modid": "lampwright",
+  "name": "Lampwright",
+  "website": "https://github.com/joyedit/Lampwright",
+  "authors": ["Feyd"],
+  "description": "A tinker's belt with four temporal gears feeding a brass hip lamp. Wear it and it lights your way from the waist - no torch, no lantern, both hands and the offhand slot free. Built for anyone running heavy lighting or path-tracing shaders, where a two-handed weapon means walking blind.",
+  "version": "0.2.0",
+  "side": "Universal",
+  "requiredOnClient": true,
+  "requiredOnServer": true,
+  "dependencies": {
+    "game": ""
+  }
+}
