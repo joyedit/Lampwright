@@ -138,7 +138,8 @@ a(f'<p style="font-size:1.1em; line-height:1.6; color:{INK2}; max-width:34em; ma
   f'A belt that lights your way while you wear it &mdash; so both hands and the offhand slot '
   f'stay free for the axe, the bow, or the shield you actually came down here with.</p>')
 a(f'<div style="font-family:{MONO}; font-size:0.76em; color:{INK3}; margin:0 0 26px;">v{VERSION} '
-  f'&nbsp;&middot;&nbsp; built for Vintage Story {GAME} &nbsp;&middot;&nbsp; client and server</div>')
+  f'&nbsp;&middot;&nbsp; built for Vintage Story {GAME} &nbsp;&middot;&nbsp; client and server'
+  f'&nbsp; &middot;&nbsp; <b>BETA</b></div>')
 
 a(specs([("17", "light", "brighter than a torch, just under a lantern"),
          ("6", "colours", "dyed in a barrel, any colour to any other"),
@@ -187,12 +188,22 @@ a(p('Seal the belt in a barrel with <b>dye</b> for <b>4 hours</b>, the same way 
     'belt into its item slot. Any amount from <b>1 litre</b> up works, and only 1 litre is '
     'spent, so a single bucket does the whole set:'))
 a(bullets([
-    '<b>Temporal</b> &mdash; cyan, the colour it is crafted at',
-    '<b>Orange</b> &mdash; the exact colour of a lit torch',
-    '<b>Red</b>',
-    '<b>Yellow</b> &mdash; warm, close to a gas lamp',
-    '<b>Blue</b> &mdash; a cool sky blue',
-    '<b>White</b> &mdash; neutral; the one colour made from borax rather than a plant']))
+    '<b>Temporal</b> &mdash; cyan, the colour it is crafted at. No dye; a <b>temporal gear</b> '
+    'puts it back',
+    '<b>Orange</b> &mdash; the exact colour of a lit torch. <b>Orange dye</b>, from yellow dye '
+    'and an onion',
+    '<b>Red</b> &mdash; <b>red dye</b>, from crushed cinnabar',
+    '<b>Yellow</b> &mdash; warm, close to a gas lamp. <b>Yellow dye</b>, from an onion or a '
+    'heather flower',
+    '<b>Blue</b> &mdash; a cool sky blue. <b>Blue dye</b>, from a cornflower or crushed lapis '
+    'lazuli',
+    '<b>White</b> &mdash; neutral. <b>White dye</b>, from borax powder &mdash; the only one '
+    'that is not grown or mined near the surface']))
+a(p('The dyes themselves are barrel work too: water and the ingredient, sealed 8 hours. Yellow '
+    'and blue are the cheap ones, an onion or a cornflower away. Orange is the only two-stage '
+    'dye, made from yellow rather than from water. White is the long errand &mdash; borax only '
+    'forms in sedimentary rock, so it means claystone, sandstone, shale, chalk, limestone, '
+    'chert or conglomerate, or an Alba trader.'))
 a(p('Any colour re-dyes straight to any other, so you never have to pass back through temporal. '
     'Putting a <b>temporal gear</b> in the barrel in place of the dye fits the original lens back '
     'and returns it to cyan.'))
