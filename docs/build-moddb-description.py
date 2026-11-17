@@ -181,8 +181,11 @@ a(p('That gives you the <b>temporal</b> belt, which glows cyan. The other five c
 
 # ---- colours ----
 a(h2("Six colours"))
-a(p('Seal the belt in a barrel with <b>1 litre of dye</b> for <b>4 hours</b>, the same way you '
-    'dye cloth and daub:'))
+a(p('Seal the belt in a barrel with <b>dye</b> for <b>4 hours</b>, the same way you dye cloth '
+    'and daub. Pour the dye in by holding the bucket and right-clicking the barrel &mdash; '
+    'liquid does not go in through the barrel window &mdash; then open the barrel and drop the '
+    'belt into its item slot. Any amount from <b>1 litre</b> up works, and only 1 litre is '
+    'spent, so a single bucket does the whole set:'))
 a(bullets([
     '<b>Temporal</b> &mdash; cyan, the colour it is crafted at',
     '<b>Orange</b> &mdash; the exact colour of a lit torch',
@@ -205,6 +208,9 @@ a(bullets([
     f'<b>Sewing kit</b> &mdash; {key("+75%")} condition',
     f'<b>Cloth or linen</b> &mdash; {key("+50%")}',
     f'<b>Flax twine</b> &mdash; {key("+10%")}']))
+a(p('A trip through the dye barrel also mends it. Barrel crafting hands back a fresh item '
+    'rather than carrying the old one across, so a belt comes out of a re-dye at full '
+    'condition whatever state it went in at.'))
 a(p('Condition only scales the warmth. A belt worn down to its last threads still lights at full '
     'strength.'))
 

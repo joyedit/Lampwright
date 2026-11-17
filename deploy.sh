@@ -47,6 +47,13 @@ fi
 # release zip.
 cp -r "$SCRIPT_DIR/assets/lampwright" "$STAGING/assets/"
 
+# ...but that guard only catches a stray asset DOMAIN. A loose file dropped straight
+# into assets/lampwright/ still rides along: a 1.5MB source render for the ModDB
+# thumbnail once tripled the release zip this way. Nothing valid lives at the root of
+# an asset domain - every real asset is under itemtypes/, textures/, shapes/, lang/,
+# recipes/ and so on - so drop any file found there.
+find "$STAGING/assets/lampwright" -maxdepth 1 -type f -print -delete
+
 # Zip is named with the mod version (Lampwright_x.y.z.zip); older versions are removed
 # so the game never loads two copies side by side.
 VERSION=$(grep -oP '"version":\s*"\K[^"]+' "$SCRIPT_DIR/modinfo.json")
